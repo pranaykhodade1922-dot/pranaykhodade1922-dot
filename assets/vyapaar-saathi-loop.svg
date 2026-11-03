@@ -1,0 +1,165 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 180" width="100%" height="auto" fill="none">
+  <defs>
+    <linearGradient id="card-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090D1A" />
+      <stop offset="100%" stop-color="#0E1628" />
+    </linearGradient>
+
+    <linearGradient id="step-cyan" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0284C7" />
+      <stop offset="100%" stop-color="#38BDF8" />
+    </linearGradient>
+
+    <linearGradient id="step-violet" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6366F1" />
+      <stop offset="100%" stop-color="#A855F7" />
+    </linearGradient>
+
+    <linearGradient id="step-amber" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D97706" />
+      <stop offset="100%" stop-color="#F59E0B" />
+    </linearGradient>
+
+    <linearGradient id="step-emerald" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#059669" />
+      <stop offset="100%" stop-color="#10B981" />
+    </linearGradient>
+
+    <filter id="glow-filter" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <style>
+      .font-mono { font-family: 'JetBrains Mono', 'SF Pro Mono', Consolas, monospace; }
+      .font-sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+
+      @keyframes pulse-node {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-2px); }
+      }
+
+      @keyframes flow {
+        from { stroke-dashoffset: 24; }
+        to { stroke-dashoffset: 0; }
+      }
+
+      .node-step {
+        animation: pulse-node 3s ease-in-out infinite;
+      }
+      .flow-arrow {
+        stroke-dasharray: 4, 4;
+        animation: flow 1.2s linear infinite;
+      }
+    </style>
+  </defs>
+
+  <!-- Container -->
+  <rect width="880" height="180" rx="12" fill="url(#card-bg)" stroke="#1E293B" stroke-width="1.2" />
+
+  <!-- Title & Hackathon Tag -->
+  <g transform="translate(24, 26)">
+    <text x="0" y="0" fill="#E2E8F0" font-size="13" font-weight="700" class="font-sans">
+      VYAPAAR SAATHI // AGENTIC DECISION-ACTION ARCHITECTURE
+    </text>
+    <text x="520" y="0" fill="#38BDF8" font-size="11" font-weight="600" class="font-mono">
+      PAYTM BUILD FOR INDIA AI HACKATHON
+    </text>
+  </g>
+
+  <!-- Flow Line behind nodes -->
+  <line x1="60" y1="90" x2="820" y2="90" stroke="#334155" stroke-width="2" />
+  <line x1="60" y1="90" x2="820" y2="90" stroke="#38BDF8" stroke-width="2" class="flow-arrow" opacity="0.6" />
+
+  <!-- STEP 1: OBSERVE -->
+  <g transform="translate(30, 60)" class="node-step">
+    <rect width="96" height="60" rx="8" fill="#0F172A" stroke="#38BDF8" stroke-width="1.2" />
+    <circle cx="16" cy="18" r="6" fill="#38BDF8" />
+    <text x="16" y="21" fill="#0F172A" font-size="9" font-weight="800" text-anchor="middle" class="font-mono">1</text>
+    <text x="30" y="22" fill="#38BDF8" font-size="11" font-weight="700" class="font-mono">OBSERVE</text>
+    <text x="12" y="44" fill="#94A3B8" font-size="9.5" class="font-sans">Voice / Ledger</text>
+  </g>
+
+  <!-- Arrow 1 -> 2 -->
+  <path d="M 132 90 L 146 90" stroke="#38BDF8" stroke-width="1.5" />
+
+  <!-- STEP 2: REASON -->
+  <g transform="translate(150, 60)" class="node-step" style="animation-delay: 0.3s;">
+    <rect width="96" height="60" rx="8" fill="#0F172A" stroke="#60A5FA" stroke-width="1.2" />
+    <circle cx="16" cy="18" r="6" fill="#60A5FA" />
+    <text x="16" y="21" fill="#0F172A" font-size="9" font-weight="800" text-anchor="middle" class="font-mono">2</text>
+    <text x="30" y="22" fill="#60A5FA" font-size="11" font-weight="700" class="font-mono">REASON</text>
+    <text x="12" y="44" fill="#94A3B8" font-size="9.5" class="font-sans">Context &amp; Risk</text>
+  </g>
+
+  <!-- Arrow 2 -> 3 -->
+  <path d="M 252 90 L 266 90" stroke="#60A5FA" stroke-width="1.5" />
+
+  <!-- STEP 3: PROPOSE -->
+  <g transform="translate(270, 60)" class="node-step" style="animation-delay: 0.6s;">
+    <rect width="96" height="60" rx="8" fill="#0F172A" stroke="#818CF8" stroke-width="1.2" />
+    <circle cx="16" cy="18" r="6" fill="#818CF8" />
+    <text x="16" y="21" fill="#0F172A" font-size="9" font-weight="800" text-anchor="middle" class="font-mono">3</text>
+    <text x="30" y="22" fill="#818CF8" font-size="11" font-weight="700" class="font-mono">PROPOSE</text>
+    <text x="12" y="44" fill="#94A3B8" font-size="9.5" class="font-sans">Draft Plan</text>
+  </g>
+
+  <!-- Arrow 3 -> 4 -->
+  <path d="M 372 90 L 386 90" stroke="#818CF8" stroke-width="1.5" />
+
+  <!-- STEP 4: APPROVE (CRITICAL HUMAN IN THE LOOP) -->
+  <g transform="translate(390, 52)" class="node-step" style="animation-delay: 0.9s;">
+    <rect width="108" height="76" rx="8" fill="#1C1917" stroke="#F59E0B" stroke-width="1.8" filter="url(#glow-filter)" />
+    <rect width="72" height="14" rx="4" x="18" y="-7" fill="#F59E0B" />
+    <text x="54" y="3" fill="#1C1917" font-size="8.5" font-weight="800" text-anchor="middle" class="font-mono">HUMAN-IN-LOOP</text>
+    <circle cx="18" cy="24" r="6" fill="#F59E0B" />
+    <text x="18" y="27" fill="#1C1917" font-size="9" font-weight="800" text-anchor="middle" class="font-mono">4</text>
+    <text x="32" y="28" fill="#FBBF24" font-size="11.5" font-weight="800" class="font-mono">APPROVE</text>
+    <text x="12" y="48" fill="#FEF3C7" font-size="9.5" font-weight="600" class="font-sans">Merchant Check</text>
+    <text x="12" y="62" fill="#D97706" font-size="8.5" class="font-mono">Zero Silent Actions</text>
+  </g>
+
+  <!-- Arrow 4 -> 5 -->
+  <path d="M 504 90 L 518 90" stroke="#F59E0B" stroke-width="1.5" />
+
+  <!-- STEP 5: ACT -->
+  <g transform="translate(522, 60)" class="node-step" style="animation-delay: 1.2s;">
+    <rect width="96" height="60" rx="8" fill="#0F172A" stroke="#10B981" stroke-width="1.2" />
+    <circle cx="16" cy="18" r="6" fill="#10B981" />
+    <text x="16" y="21" fill="#0F172A" font-size="9" font-weight="800" text-anchor="middle" class="font-mono">5</text>
+    <text x="30" y="22" fill="#10B981" font-size="11" font-weight="700" class="font-mono">ACT</text>
+    <text x="12" y="44" fill="#94A3B8" font-size="9.5" class="font-sans">Execute Action</text>
+  </g>
+
+  <!-- Arrow 5 -> 6 -->
+  <path d="M 624 90 L 638 90" stroke="#10B981" stroke-width="1.5" />
+
+  <!-- STEP 6: VERIFY -->
+  <g transform="translate(642, 60)" class="node-step" style="animation-delay: 1.5s;">
+    <rect width="102" height="60" rx="8" fill="#0F172A" stroke="#34D399" stroke-width="1.2" />
+    <circle cx="16" cy="18" r="6" fill="#34D399" />
+    <text x="16" y="21" fill="#0F172A" font-size="9" font-weight="800" text-anchor="middle" class="font-mono">6</text>
+    <text x="30" y="22" fill="#34D399" font-size="11" font-weight="700" class="font-mono">VERIFY</text>
+    <text x="12" y="44" fill="#94A3B8" font-size="9" class="font-mono">Integer Paise Math</text>
+  </g>
+
+  <!-- Arrow 6 -> 7 -->
+  <path d="M 750 90 L 764 90" stroke="#34D399" stroke-width="1.5" />
+
+  <!-- STEP 7: REMEMBER -->
+  <g transform="translate(768, 60)" class="node-step" style="animation-delay: 1.8s;">
+    <rect width="96" height="60" rx="8" fill="#0F172A" stroke="#C084FC" stroke-width="1.2" />
+    <circle cx="16" cy="18" r="6" fill="#C084FC" />
+    <text x="16" y="21" fill="#0F172A" font-size="9" font-weight="800" text-anchor="middle" class="font-mono">7</text>
+    <text x="28" y="22" fill="#C084FC" font-size="10.5" font-weight="700" class="font-mono">REMEMBER</text>
+    <text x="12" y="44" fill="#94A3B8" font-size="9.5" class="font-sans">Ledger History</text>
+  </g>
+
+  <!-- Bottom Footnote Bar -->
+  <g transform="translate(24, 160)">
+    <text x="0" y="0" fill="#64748B" font-size="10" class="font-mono">
+      PRINCIPLES: Voice-first UX • Deterministic integer arithmetic (zero floating-point drift) • Explicit authorization before any state change
+    </text>
+  </g>
+</svg>
+
