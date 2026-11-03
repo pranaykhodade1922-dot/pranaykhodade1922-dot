@@ -1,0 +1,167 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 180" width="100%" height="auto" fill="none">
+  <defs>
+    <linearGradient id="tech-card-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="100%" stop-color="#F8FAFC" />
+    </linearGradient>
+
+    <linearGradient id="pill-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="100%" stop-color="#F1F5F9" />
+    </linearGradient>
+
+    <filter id="soft-shadow" x="-5%" y="-5%" width="110%" height="115%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#0F172A" flood-opacity="0.04" />
+    </filter>
+
+    <style>
+      .font-sans { font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif; }
+      .font-mono { font-family: 'SF Pro Mono', 'JetBrains Mono', Consolas, monospace; }
+
+      @keyframes float-up1 {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-3px); }
+      }
+      @keyframes float-up2 {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-4px); }
+      }
+      @keyframes radar-pulse {
+        0%, 100% { opacity: 1; transform: scale(1); }
+        50% { opacity: 0.3; transform: scale(0.85); }
+      }
+
+      .card-float1 { animation: float-up1 5s ease-in-out infinite; }
+      .card-float2 { animation: float-up2 6s ease-in-out infinite 0.5s; }
+      .card-float3 { animation: float-up1 5.5s ease-in-out infinite 1s; }
+      .card-float4 { animation: float-up2 6.5s ease-in-out infinite 1.5s; }
+      .radar-dot { animation: radar-pulse 2s infinite ease-in-out; transform-origin: 32px 28px; }
+    </style>
+  </defs>
+
+  <!-- Container -->
+  <rect x="2" y="2" width="956" height="176" rx="18" fill="url(#tech-card-bg)" stroke="#E2E8F0" stroke-width="1.2" filter="url(#soft-shadow)" />
+
+  <!-- Top bar -->
+  <g transform="translate(28, 22)">
+    <circle cx="4" cy="6" r="3.5" fill="#0071E3" class="radar-dot" />
+    <text x="16" y="10" fill="#0F172A" font-size="11.5" font-weight="700" letter-spacing="1" class="font-mono">VERIFIED TECHNICAL STACK</text>
+    <text x="730" y="10" fill="#64748B" font-size="10.5" font-weight="500" class="font-mono">TESTED IN BUILDS &amp; HACKATHONS</text>
+  </g>
+
+  <!-- 4 DOMAIN CARDS -->
+  <g transform="translate(24, 46)">
+    <!-- Column 1: Languages -->
+    <g class="card-float1" transform="translate(0, 0)">
+      <rect width="216" height="112" rx="12" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" />
+      <g transform="translate(14, 16)">
+        <text x="0" y="4" fill="#0284C7" font-size="10" font-weight="700" letter-spacing="0.8" class="font-mono">LANGUAGES</text>
+        <!-- Pill row 1 -->
+        <g transform="translate(0, 16)">
+          <rect width="88" height="26" rx="6" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1" />
+          <circle cx="12" cy="13" r="3.5" fill="#00599C" />
+          <text x="22" y="17" fill="#0F172A" font-size="11" font-weight="600" class="font-sans">C++</text>
+
+          <rect x="96" width="92" height="26" rx="6" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1" />
+          <circle cx="108" cy="13" r="3.5" fill="#3776AB" />
+          <text x="118" y="17" fill="#0F172A" font-size="11" font-weight="600" class="font-sans">Python</text>
+        </g>
+        <!-- Pill row 2 -->
+        <g transform="translate(0, 48)">
+          <rect width="88" height="26" rx="6" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1" />
+          <circle cx="12" cy="13" r="3.5" fill="#3178C6" />
+          <text x="22" y="17" fill="#0F172A" font-size="11" font-weight="600" class="font-sans">TypeScript</text>
+
+          <rect x="96" width="92" height="26" rx="6" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1" />
+          <circle cx="108" cy="13" r="3.5" fill="#F7DF1E" />
+          <text x="118" y="17" fill="#0F172A" font-size="11" font-weight="600" class="font-sans">JavaScript</text>
+        </g>
+      </g>
+    </g>
+
+    <!-- Column 2: Frontend -->
+    <g class="card-float2" transform="translate(232, 0)">
+      <rect width="216" height="112" rx="12" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" />
+      <g transform="translate(14, 16)">
+        <text x="0" y="4" fill="#2563EB" font-size="10" font-weight="700" letter-spacing="0.8" class="font-mono">INTERFACE</text>
+        <!-- Pill row 1 -->
+        <g transform="translate(0, 16)">
+          <rect width="88" height="26" rx="6" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1" />
+          <circle cx="12" cy="13" r="3.5" fill="#61DAFB" />
+          <text x="22" y="17" fill="#0F172A" font-size="11" font-weight="600" class="font-sans">React</text>
+
+          <rect x="96" width="92" height="26" rx="6" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1" />
+          <circle cx="108" cy="13" r="3.5" fill="#06B6D4" />
+          <text x="118" y="17" fill="#0F172A" font-size="11" font-weight="600" class="font-sans">Tailwind</text>
+        </g>
+        <!-- Pill row 2 -->
+        <g transform="translate(0, 48)">
+          <rect width="88" height="26" rx="6" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1" />
+          <circle cx="12" cy="13" r="3.5" fill="#E34F26" />
+          <text x="22" y="17" fill="#0F172A" font-size="11" font-weight="600" class="font-sans">HTML5</text>
+
+          <rect x="96" width="92" height="26" rx="6" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1" />
+          <circle cx="108" cy="13" r="3.5" fill="#1572B6" />
+          <text x="118" y="17" fill="#0F172A" font-size="11" font-weight="600" class="font-sans">CSS3</text>
+        </g>
+      </g>
+    </g>
+
+    <!-- Column 3: Backend & Data -->
+    <g class="card-float3" transform="translate(464, 0)">
+      <rect width="216" height="112" rx="12" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" />
+      <g transform="translate(14, 16)">
+        <text x="0" y="4" fill="#7C3AED" font-size="10" font-weight="700" letter-spacing="0.8" class="font-mono">BACKEND &amp; DATA</text>
+        <!-- Pill row 1 -->
+        <g transform="translate(0, 16)">
+          <rect width="88" height="26" rx="6" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1" />
+          <circle cx="12" cy="13" r="3.5" fill="#339933" />
+          <text x="22" y="17" fill="#0F172A" font-size="11" font-weight="600" class="font-sans">Node.js</text>
+
+          <rect x="96" width="92" height="26" rx="6" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1" />
+          <circle cx="108" cy="13" r="3.5" fill="#4169E1" />
+          <text x="118" y="17" fill="#0F172A" font-size="11" font-weight="600" class="font-sans">PostgreSQL</text>
+        </g>
+        <!-- Pill row 2 -->
+        <g transform="translate(0, 48)">
+          <rect width="88" height="26" rx="6" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1" />
+          <circle cx="12" cy="13" r="3.5" fill="#3ECF8E" />
+          <text x="22" y="17" fill="#0F172A" font-size="11" font-weight="600" class="font-sans">Supabase</text>
+
+          <rect x="96" width="92" height="26" rx="6" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1" />
+          <circle cx="108" cy="13" r="3.5" fill="#FFCA28" />
+          <text x="118" y="17" fill="#0F172A" font-size="11" font-weight="600" class="font-sans">Firebase</text>
+        </g>
+      </g>
+    </g>
+
+    <!-- Column 4: Tooling -->
+    <g class="card-float4" transform="translate(696, 0)">
+      <rect width="216" height="112" rx="12" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" />
+      <g transform="translate(14, 16)">
+        <text x="0" y="4" fill="#059669" font-size="10" font-weight="700" letter-spacing="0.8" class="font-mono">TOOLING &amp; CLOUD</text>
+        <!-- Pill row 1 -->
+        <g transform="translate(0, 16)">
+          <rect width="88" height="26" rx="6" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1" />
+          <circle cx="12" cy="13" r="3.5" fill="#F05032" />
+          <text x="22" y="17" fill="#0F172A" font-size="11" font-weight="600" class="font-sans">Git</text>
+
+          <rect x="96" width="92" height="26" rx="6" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1" />
+          <circle cx="108" cy="13" r="3.5" fill="#181717" />
+          <text x="118" y="17" fill="#0F172A" font-size="11" font-weight="600" class="font-sans">GitHub</text>
+        </g>
+        <!-- Pill row 2 -->
+        <g transform="translate(0, 48)">
+          <rect width="88" height="26" rx="6" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1" />
+          <circle cx="12" cy="13" r="3.5" fill="#F24E1E" />
+          <text x="22" y="17" fill="#0F172A" font-size="11" font-weight="600" class="font-sans">Figma</text>
+
+          <rect x="96" width="92" height="26" rx="6" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1" />
+          <circle cx="108" cy="13" r="3.5" fill="#000000" />
+          <text x="118" y="17" fill="#0F172A" font-size="11" font-weight="600" class="font-sans">Vercel</text>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
+
