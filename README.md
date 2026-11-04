@@ -35,7 +35,7 @@
   <tr>
     <td width="220" align="center" valign="top">
       <br />
-      <img src="assets/pranay-identity.png" width="190" alt="Pranay Khodade Portrait" />
+      <img src="assets/pranay-identity.png" width="180" alt="Pranay Khodade - Main Identity Portrait" />
       <br /><br />
       <b>Pranay Khodade</b><br />
       <sub>2nd-Year B.Tech CSE (Data Science)</sub><br />
@@ -152,13 +152,13 @@
 
 <table>
   <tr>
-    <td width="200" align="center" valign="middle">
-      <img src="assets/pranay-standing-card.png" width="180" alt="Pranay Khodade - Builder Spotlight" />
+    <td width="220" align="center" valign="middle">
+      <img src="assets/pranay-standing-card.png" width="190" alt="Pranay Khodade - Studio Portrait" />
     </td>
     <td valign="middle">
       <h3>Let's build something impactful.</h3>
       <p>
-        Always looking to collaborate on ambitious products, hackathons, and innovative open-source architectures.
+        I'm always open to discussing new technical ideas, collaborating on hackathons, contributing to high-impact open-source repositories, or exploring innovative AI-first software products.
       </p>
       <p>
         <a href="https://linkedin.com/in/pranay-khodade/">
